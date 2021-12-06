@@ -1,0 +1,54 @@
+<div class="container">
+<div class="title text-center col-lg-12">
+  <h2>Orders:</h2>
+</div>
+<table class="table mt-2">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">
+        <div class="d-felx flex-row">
+          <input [(ngModel)]="OrderIdFilter" class="form-control"
+          (keyup)="FilterFn()" placeholder="Filter">
+          <button type="button" class="btn btn-light" (click)="sortResult('id', true)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+          </button>
+          <button type="button" class="btn btn-light" (click)="sortResult('id', false)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+          </button>
+        </div>
+        ID</th>
+      <th scope="col">
+        <div class="d-felx flex-row">
+          <input [(ngModel)]="OrderNameFilter" class="form-control"
+          (keyup)="FilterFn()" placeholder="Filter">
+          <button type="button" class="btn btn-light" (click)="sortResult('name', true)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+          </button>
+          <button type="button" class="btn btn-light" (click)="sortResult('name', false)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg>
+          </button>
+        </div>
+        Name</th>
+      <th scope="col"> Sum</th>
+      <th scope="col" class="text-right"><button class="btn btn-success" [routerLink]="['/orders/add']"><i class="fa fa-plus"></i></button></th> 
+      <td><button type="button" class="btn btn-dark" (click)="logout()">Logout</button></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of ordersList">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.sum}}</td>
+      <td class="text-right"><button class="btn btn-danger" (click)="deleteOrder(item)"><i class="fa fa-trash"></i></button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

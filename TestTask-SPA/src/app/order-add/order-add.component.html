@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-3"></div>
+   <div class="col-lg-6 text-center">
+     <form #registerForm="ngForm" (ngSubmit)="addOrder()">
+       <h2 class="text-center text-primary text-dark">Add Order</h2><hr>
+       <div class="form-group">
+         <input type="text" class="form-control" required name="model.name" [(ngModel)]="model.name" placeholder="Enter Name of Order:">
+         <input type="text" class="form-control mt-3" required name="model.sum" [(ngModel)]="model.sum" placeholder="Enter Sum of Order:">
+       </div>
+       <div class="form-group">
+         <button [disabled]="!registerForm.dirty" type="submit" class="btn btn-success mt-3">Add</button>
+         <button class="btn btn-secondary mt-3" type="button" (click)="back()">Back</button>
+       </div>
+     </form>
+   </div>
+ </div>

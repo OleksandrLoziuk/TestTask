@@ -1,0 +1,14 @@
+C:\Users\Rip\Desktop\TestTask\TestTask.API\bin\Debug\netcoreapp2.1\TestTask.API.deps.json
+C:\Users\Rip\Desktop\TestTask\TestTask.API\bin\Debug\netcoreapp2.1\TestTask.API.runtimeconfig.json
+C:\Users\Rip\Desktop\TestTask\TestTask.API\bin\Debug\netcoreapp2.1\TestTask.API.runtimeconfig.dev.json
+C:\Users\Rip\Desktop\TestTask\TestTask.API\bin\Debug\netcoreapp2.1\TestTask.API.dll
+C:\Users\Rip\Desktop\TestTask\TestTask.API\bin\Debug\netcoreapp2.1\TestTask.API.pdb
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.csprojAssemblyReference.cache
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.csproj.CoreCompileInputs.cache
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.RazorAssemblyInfo.cache
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.RazorAssemblyInfo.cs
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.AssemblyInfoInputs.cache
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.AssemblyInfo.cs
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.RazorTargetAssemblyInfo.cache
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.dll
+C:\Users\Rip\Desktop\TestTask\TestTask.API\obj\Debug\netcoreapp2.1\TestTask.API.pdb
